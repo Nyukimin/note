@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黒板アート風デザイン</title>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&family=Yomogi&family=Kaisei+Decol&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Zen Maru Gothic', 'Yomogi', 'Kaisei Decol', sans-serif; /* 日本語フォント指定 */
+            background-color: #253C30; /* 黒板背景色 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url("chalkboard-texture.jpg"); /* 黒板テクスチャの背景画像 */
+            background-size: cover;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px; /* 最大幅 */
+            padding: 20px;
+            /*background-color: rgba(37, 60, 48, 0.8); /* 半透明の黒板背景 */
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #F5F5F5; /* 白チョーク色 */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 3px rgba(0,0,0,0.4); /* チョーク文字の影 */
+        }
+        h2{
+           font-size: 20px;
+            color: #FFEAA0; /* 黄チョーク色 */
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.4); /* チョーク文字の影 */
+        }
+
+
+        h3 {
+            font-size: 24px;
+            color: #A0D1FF; /* 青チョーク色 */
+            border-bottom: 2px solid #A0D1FF;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.4); /* チョーク文字の影 */
+        }
+
+        p {
+            font-size: 16px;
+            color: #F5F5F5; /* 白チョーク色 */
+            line-height: 1.6;
+            margin-bottom: 16px;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.4); /* チョーク文字の影 */
+        }
+        a{
+          color: #FF9E9E;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        a:hover{
+          text-decoration: underline;
+        }
+
+        .columns {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .column {
+            width: 48%; /* 2カラムの場合の幅 */
+            /* チョークで書いたようなスタイル */
+             font-family: 'Zen Maru Gothic', 'Yomogi', 'Kaisei Decol', sans-serif;
+            /* 必要に応じて調整 */
+        }
+       .section {
+            margin-bottom: 20px; /* セクション間の余白 */
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #A0D1FF; /* 青チョーク色 */
+            border-bottom: 2px solid #A0D1FF;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.4); /* チョーク文字の影 */
+        }
+
+        /* チョークの質感と手書き感を出すためのスタイル */
+        body {
+            background-image: url('chalkboard-texture.jpg'); /* 黒板のテクスチャ画像 */
+            background-size: cover;
+            background-position: center;
+        }
+        h1, h2, h3, p, a {
+            font-family: 'Zen Maru Gothic', 'Yomogi', 'Kaisei Decol', sans-serif; /* 日本語フォント */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* チョークの粉っぽい影 */
+            line-height: 1.6; /* 行間 */
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #F5F5F5; /* 白チョーク */
+        }
+        h2 {
+            font-size: 20px;
+            color: #FFEAA0; /* 黄チョーク */
+        }
+        h3 {
+            font-size: 24px;
+            color: #A0D1FF; /* 青チョーク */
+            border-bottom: 2px solid #A0D1FF;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 16px;
+            color: #F5F5F5; /* 白チョーク */
+        }
+        a {
+            color: #FF9E9E; /* 赤チョーク */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 手書き風のスタイル */
+        h1, h2, h3, p, a {
+           /*transform: rotate(-1deg);  *//* わずかに傾ける */
+            letter-spacing: 1px; /* 字間を少し広げる */
+        }
+        .strikethrough {
+          text-decoration: line-through;
+          color: #FF9E9E;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>補助ベクトルの基本概念</h1>
+        <h2>補助ベクトル（auxiliary vector）とは？</h2>
+        <p>
+            Linuxの実行可能バイナリが起動時に受け取る「第三の情報」です。
+        </p>
+        <ol>
+            <li>コマンドライン引数：ユーザーから直接渡される値</li>
+            <li>環境変数：プロセスの実行環境を設定する値</li>
+            <li>補助ベクトル：システムからプロセスへ渡される情報</li>
+        </ol>
+
+        <h3>主な特徴：</h3>
+        <ul style="list-style: none;">
+            <li>主にLinuxカーネルからダイナミックリンカへの情報伝達に使用</li>
+            <li>a_typeとa_valの組み合わせで構成</li>
+            <li>プログラム内から参照・利用可能</li>
+            <li>セキュリティや最適化などの重要機能をサポート</li>
+             <li><span class="strikethrough">セキュリティや最適化などの重要機能をサポート</span></li>
+        </ul>
+    </div>
+</body>
+</html>
